@@ -34,4 +34,31 @@ Ajoutez les dépendances suivantes dans votre `pom.xml` :
 </dependencies>
 
 ```
-s
+
+## 3. Application Kafka Streams
+### 3.1. Produire les Transactions Financières
+Le producteur génère des transactions aléatoires et les envoie au topic transactions-input.
+
+### 3.2. Filtrer les Transactions Suspectes
+Ce processeur Kafka Streams filtre les transactions suspectes, définies par un seuil d'amplitude de 10 000.
+
+### 3.3. Consommer les Transactions Suspectes
+Les transactions suspectes sont envoyées à InfluxDB pour stockage et analyse.
+
+## 4. Stocker les Transactions Suspectes dans InfluxDB
+Les alertes de fraude sont stockées directement dans InfluxDB avec les informations suivantes :
+
+    - userId
+    
+    - amount
+    
+    - timestamp
+    
+## 5. Tableau de Bord Grafana
+### 5.1. Configuration de Grafana
+Connectez Grafana à InfluxDB et créez un tableau de bord pour visualiser les transactions suspectes.
+
+## 6. Visualisations et Diagrammes
+![Tableau de bord Grafana](./pictures/1.png)
+
+
