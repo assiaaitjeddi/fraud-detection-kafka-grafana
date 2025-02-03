@@ -58,7 +58,13 @@ Les alertes de fraude sont stockées directement dans InfluxDB avec les informat
 ### 5.1. Configuration de Grafana
 Connectez Grafana à InfluxDB et créez un tableau de bord pour visualiser les transactions suspectes.
 
-## 6. Visualisations et Diagrammes
+## 6. Visualisations 
 ![Tableau de bord Grafana](./pictures/1.png)
+![Tableau de bord Grafana](./pictures/2.png)
+![Tableau de bord Grafana](./pictures/3.png)
+![Tableau de bord Grafana](./pictures/4.png)
+![Tableau de bord Grafana](./pictures/5.png)
+![Tableau de bord Grafana](./pictures/6.png)
+![Tableau de bord Grafana](./pictures/7.png)
 
 
